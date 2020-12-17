@@ -52,7 +52,7 @@ public class coderenDecoderen {
         }
     }
 
-    public void codeerBoodschap(String boodschap){
+    public String codeerBoodschap(String boodschap){
         char[] charactersMessage = new char[boodschap.length()];
         int[] cryptedMessage = new int[boodschap.length()];
         String s = "";
@@ -65,6 +65,7 @@ public class coderenDecoderen {
             s+= cryptedMessage[i] + " ";
         }
         System.out.println(s);
+        return s;
     }
 
     public void decodeMessage(String encryptedMessage){
